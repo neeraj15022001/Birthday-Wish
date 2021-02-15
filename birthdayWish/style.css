@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+body {
+  height: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#music {
+  display: none;
+}
+.darkScreen {
+  position: absolute;
+  height: 100vh;
+  /* background: url("./assets/6784588-cute-heart-pattern-wallpaper.jpg"); */
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: gold;
+  font-size: 3rem;
+  box-shadow: 0px 0px 10px 5px gold;
+}
+.baloonsBorder {
+  position: absolute;
+  width: 100%;
+  bottom: -30rem;
+  z-index: 500;
+}
+.baloonsAnimation {
+  animation: goUp ease-in-out 5s;
+}
+@keyframes goUp {
+  from {
+    bottom: -30rem;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+.decoration {
+  position: absolute;
+  width: 20rem;
+  top: 0;
+  left: 0;
+}
+.decoration2 {
+  position: absolute;
+  width: 20rem;
+  top: 0;
+  right: 0;
+}
+.banner {
+  /* display: none; */
+  position: absolute;
+  width: 40rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: -40%; */
+  top: 0;
+  opacity: 0.8;
+}
+.baloons {
+  position: absolute;
+  width: 15rem;
+  left: 37%;
+  bottom: 12rem;
+  transform: translateX(-50%);
+}
+.baloons2 {
+  position: absolute;
+  width: 15rem;
+  right: 21%;
+  bottom: 12rem;
+  transform: translateX(-50%) rotateY(180deg);
+}
+.playMusicStyle {
+  position: absolute;
+  z-index: 150;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0px 0px 10px 3px white;
+  outline: none;
+  border-radius: 100px;
+  font-size: 2rem;
+  background-color: transparent;
+}
+.getCake {
+  z-index: 500;
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0px 0px 10px 3px white;
+  outline: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.tableAndCakeContainer {
+  z-index: 500;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.table {
+  width: 13rem;
+}
+.cake {
+  width: 11rem;
+  z-index: 20;
+}
+.balloon {
+  left:20%
+}
+/* .celebration {
+    position: absolute;
+    width: 15rem;
+    bottom: 4.5rem;
+    right: 10%;
+    transform: translateX(-50%);
+}
+.dance {
+    position: absolute;
+    width: 15rem;
+    left: 15%;
+    transform: rotateY(180deg);
+    bottom: 4rem;
+}
+.dance-2 {
+    position: absolute;
+    width: 15rem;
+    bottom: 4rem;
+}
+.dj {
+    position: absolute;
+    width: 15rem;
+    right: 0;
+    bottom: 4.5rem;
+} */
+
+.wall {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 5rem;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3) inset;
+  background-color: lightblue;
+}
+.floor {
+  position: absolute;
+  height: 5rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: perspective(100px);
+  background-color: #966f33;
+}
+.bulb-glow-dim {
+  -webkit-animation: bulb_glow_dim linear 1s infinite;
+  -moz-animation: bulb_glow_dim linear 1s infinite;
+  -o-animation: bulb_glow_dim linear 1s infinite;
+  -ms-animation: bulb_glow_dim linear 1s infinite;
+  animation: bulb_glow_dim ease-in-out 1s infinite;
+}
+
+@keyframes bulb_glow_dim {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.bulb-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.bulb-size {
+  width: 3rem;
+}
+.bulb-rotate {
+  transform: rotate(180deg);
+}
+
+#story {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  padding: 10px 30px;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0px 0px 10px 3px white;
+  outline: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.row {
+  display: flex;
+}
+.message {
+  margin-top: 200px;
+  display: none;
+  position: absolute;
+  z-index: 500;
+  top: 18rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.message p {
+  letter-spacing: 5px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 2px 10px black;
+  display: none;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1920px) {
+  .banner {
+    width: 70rem;
+  }
+  .table {
+    width: 20rem;
+  }
+  .cake {
+    width: 20rem;
+  }
+  .bulb-size {
+    width: 5rem;
+  }
+  #story {
+    font-size: 3.5rem;
+  }
+  .message {
+    top: 35rem;
+  }
+}
